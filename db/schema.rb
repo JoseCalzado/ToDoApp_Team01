@@ -14,6 +14,8 @@ ActiveRecord::Schema.define(version: 2020_03_02_123406) do
 
   create_table "todo_items", force: :cascade do |t|
     t.string "content"
+    t.string "priority"
+    t.date "deadline"
     t.integer "todo_list_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

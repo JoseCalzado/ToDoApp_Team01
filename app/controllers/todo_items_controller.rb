@@ -33,7 +33,7 @@ def set_todo_item
 end
 
 def todo_item_params
- params[:todo_item].permit(:content)
+ params[:todo_item].permit(:content, :priority, :deadline)
 end
 
 end
